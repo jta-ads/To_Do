@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1518976024611-28bf4b48222e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+main{
+    background-color: aliceblue;
+    width: 40vw;
+    /* height: 30vh; */
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
+}
+
+header{
+    border-bottom: 1px solid grey;
+    text-align: center;
+    height: 3em;
+    margin-bottom: 1em;
+}
+#adicionar-tarefa{
+    display: grid;
+    grid-template: 1fr/60% 20%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1em;
+    column-gap: 5px;
+}
+#adicionar-tarefa label{
+    grid-area: 1;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#adicionar-tarefa input, button{
+    grid-area: 2;
+    margin-bottom: 1em;
+    height: 2em;
+}
+#adicionar-tarefa button{
+    width: 3em;
+    background-color: aliceblue;
+    color: #385269;
+    cursor: pointer;
+}
+#adicionar-tarefa button:hover{
+    color: aliceblue;
+    background-color: #385269;
+}
+#adicionar-tarefa input{
+    outline: none;
+    padding: 0 1em;
+}
+#filtraPesquisa{
+   display: flex;
+   justify-content: space-around;
+   gap:.5em;
+   border-bottom: 1px solid grey;
+   height: 3.7em;
+}
+#pesquisar, #filtrar{
+    height: 4vh;
+    margin-bottom: 1em;
+}
+#pesquisar input, #filtrar select{
+    height: 2em;
+    outline: none;
+}
+#pesquisar input{
+    width: 12em;
+    padding: 0 1em;
+}
+#pesquisar label, #filtrar label{
+    font-weight: bold;
+}
+#pesquisar{
+    border-right: 1px solid grey;    
+}
+#pesquisar button{
+    height: 2em;
+    width: 3em;
+    background-color: aliceblue;
+    color: #385269;
+    cursor: pointer;
+}
+#pesquisar button:hover{
+    color: aliceblue;
+    background-color: #385269;
+}
+#buttons{
+    height: 4em;
+    padding: .5em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+#buttons #titulo{
+    height: 100%;
+    font-size: .95em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#buttons #btns{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 5px;
+}
+#buttons #btns button{
+    padding: .4em;
+    width: 3em;
+    background-color: aliceblue;
+    color: #385269;
+    cursor: pointer;
+}
+#buttons #btns button:hover{
+    color: aliceblue;
+    background-color: #385269;
+}

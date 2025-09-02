@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a68b25948c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>TO_DO LIST</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>TO_DO Avançado</h1>
+        </header>
+        <form>
+            <div id="adicionar-tarefa">
+                <label for="addTarefa">Adicione sua Tarefa</label>
+                <input type="text" name="addTarefa" id="addTarefa" placeholder="O que você vai fazer?">
+                <button id="btnAdicionar"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div id="filtraPesquisa">
+                <div id="pesquisar">
+                    <label for="search">Pesquisar:</label>
+                    <input type="text" id="search" name="search" placeholder="Buscar...">
+                    <button id="btnPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div id="filtrar">
+                    <label for="filter">Filtrar:</label>
+                    <select id="filter" name="filter">
+                        <option value="todos" >Todos</option>
+                        <option value="concluido">Concluido</option>
+                        <option value="pendente">Pendente</option>
+                    </select>
+                </div>
+            </div>
+            <div id="buttons">
+                <div id="titulo">
+                    <p>Ir ao mercado</p>
+                </div>
+                <div id="btns">
+                    <button id="concluido"><i class="fa-solid fa-check"></i></button>
+                    <button id="editar"><i class="fa-solid fa-pencil"></i></button>
+                    <button id="excluir"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
