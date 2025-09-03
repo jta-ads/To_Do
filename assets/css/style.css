@@ -32,6 +32,9 @@ header{
     height: 3em;
     margin-bottom: 1em;
 }
+#formPrimeiro{
+    display: none;
+}
 #adicionar-tarefa{
     display: grid;
     grid-template: 1fr/60% 20%;
@@ -63,39 +66,39 @@ header{
     outline: none;
     padding: 0 1em;
 }
-#filtraPesquisa{
+.filtraPesquisa{
    display: flex;
    justify-content: space-around;
    gap:.5em;
    border-bottom: 1px solid grey;
    height: 3.7em;
 }
-#pesquisar, #filtrar{
+.pesquisar, .filtrar{
     height: 4vh;
     margin-bottom: 1em;
 }
-#pesquisar input, #filtrar select{
+.pesquisar input, .filtrar select{
     height: 2em;
     outline: none;
 }
-#pesquisar input{
+.pesquisar input{
     width: 12em;
     padding: 0 1em;
 }
-#pesquisar label, #filtrar label{
+.pesquisar label, .filtrar label{
     font-weight: bold;
 }
-#pesquisar{
+.pesquisar{
     border-right: 1px solid grey;    
 }
-#pesquisar button{
+.pesquisar button{
     height: 2em;
     width: 3em;
     background-color: aliceblue;
     color: #385269;
     cursor: pointer;
 }
-#pesquisar button:hover{
+.pesquisar button:hover{
     color: aliceblue;
     background-color: #385269;
 }
@@ -130,6 +133,52 @@ header{
     cursor: pointer;
 }
 #buttons #btns button:hover{
+    color: aliceblue;
+    background-color: #385269;
+}
+
+/* Editar pages */
+
+#editar-tarefa{
+    display: grid;
+    grid-template: 1fr /60% 20%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1em;
+    column-gap: 5px;
+}
+#editar-tarefa label{
+    grid-area: 1;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#editar-tarefa input, button{
+    grid-area: 2;
+    margin-bottom: 1em;
+    height: 2em;
+}
+#editar-tarefa button{
+    width: 3em;
+    background-color: aliceblue;
+    color: #385269;
+    cursor: pointer;
+}
+#editar-tarefa button:hover{
+    color: aliceblue;
+    background-color: #385269;
+}
+#editar-tarefa input{
+    outline: none;
+    padding: 0 1em;
+}
+#editar-tarefa #btnCancelar{
+    grid-area: 3/1;
+    padding: .4em;
+    width: 50%;
+    background-color: aliceblue;
+    color: #385269;
+    cursor: pointer;
+}
+#editar-tarefa #btnCancelar:hover{
     color: aliceblue;
     background-color: #385269;
 }

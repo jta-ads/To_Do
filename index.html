@@ -13,19 +13,19 @@
         <header>
             <h1>TO_DO Avançado</h1>
         </header>
-        <form>
+        <form id="formPrimeiro">
             <div id="adicionar-tarefa">
                 <label for="addTarefa">Adicione sua Tarefa</label>
                 <input type="text" name="addTarefa" id="addTarefa" placeholder="O que você vai fazer?">
                 <button id="btnAdicionar"><i class="fa-solid fa-plus"></i></button>
             </div>
-            <div id="filtraPesquisa">
-                <div id="pesquisar">
+            <div class="filtraPesquisa">
+                <div class="pesquisar">
                     <label for="search">Pesquisar:</label>
                     <input type="text" id="search" name="search" placeholder="Buscar...">
-                    <button id="btnPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="btnPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <div id="filtrar">
+                <div class="filtrar">
                     <label for="filter">Filtrar:</label>
                     <select id="filter" name="filter">
                         <option value="todos" >Todos</option>
@@ -42,6 +42,29 @@
                     <button id="concluido"><i class="fa-solid fa-check"></i></button>
                     <button id="editar"><i class="fa-solid fa-pencil"></i></button>
                     <button id="excluir"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </form>
+        <form id="formSegundo">
+            <div id="editar-tarefa">
+                <label for="addEditar">Editar sua Tarefa</label>
+                <input type="text" name="addEditar" id="addEditar">
+                <button id="btnEditar"><i class="fa-solid fa-check"></i></button>
+                <button id="btnCancelar">Cancelar</button>
+            </div>
+            <div class="filtraPesquisa">
+                <div class="pesquisar">
+                    <label for="searchEditar">Pesquisar:</label>
+                    <input type="text" id="searchEditar" name="searchEditar" placeholder="Buscar...">
+                    <button class="btnPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="filtrar">
+                    <label for="filterEditar">Filtrar:</label>
+                    <select id="filterEditar" name="filterEditar">
+                        <option value="todos" >Todos</option>
+                        <option value="concluido">Concluido</option>
+                        <option value="pendente">Pendente</option>
+                    </select>
                 </div>
             </div>
         </form>
