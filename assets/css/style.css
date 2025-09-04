@@ -33,7 +33,7 @@ header{
     margin-bottom: 1em;
 }
 #formPrimeiro{
-    display: none;
+    display: block;
 }
 #adicionar-tarefa{
     display: grid;
@@ -138,7 +138,9 @@ header{
 }
 
 /* Editar pages */
-
+#formSegundo{
+    display: none;
+}
 #editar-tarefa{
     display: grid;
     grid-template: 1fr /60% 20%;
